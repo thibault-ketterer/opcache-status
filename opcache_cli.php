@@ -135,11 +135,7 @@ class OpCacheDataModel
             }
 
             foreach ($files as $file => $data) {
-                $rows[] = "{$id}".
-                          "	" . $this->_format_value($data["hits"]).
-                          "	" . $this->_size_for_humans($data["memory_consumption"]).
-                          $count > 1 ? " {$file}" : "{$dir}/{$file}";
-                          '\n';
+                $rows[] = "{$id}".  "	" . $this->_format_value($data["hits"]).  "	" . $this->_size_for_humans($data["memory_consumption"]).  $count > 1 ? " {$file}" : "{$dir}/{$file}".'\n';
             }
 
             ++$id;
