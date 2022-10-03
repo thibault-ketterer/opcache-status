@@ -295,6 +295,7 @@ $dataModel = new OpCacheDataModel();
                             <th width="20%">Memory</th>
                             <th width="70%">Path</th>
 			<?php echo $dataModel->getScriptStatusRows();
+echo "\n";
 die();
 ?>
 
